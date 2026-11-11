@@ -55,10 +55,9 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Building and Refining My Issue Scout**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I upgraded my issue-selection skill into an Issue Scout with four GitHub search queries, ranking filters, and a rubric that evaluated five candidates from 380 unique issues, accepting two. The scan revealed that substring matching incorrectly excluded labels like "quick fix," the ranking stage could not detect existing fix PRs, and a top-ranked repository had only one human contributor. I corrected the filter to match whole words, explicitly added PR timeline references to the claim check, and introduced a preferred check for multiple human contributors; I also retained the umbrella-issue rule after finding that relaxing it would incorrectly accept a gold-labeled rejection. The revised filter correctly handled 16 sample labels, and the rubric achieved 20/20 on the full Unit 1 evaluation before I refined the preferred check and verified it on two additional evaluation cases.
 
 **Unit 6: [one line on the tool work]**
 
