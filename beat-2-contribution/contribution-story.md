@@ -72,10 +72,9 @@ The experience reinforced the importance of keeping evidence for my decisions, i
 
 I wrote `ship-manifest.md` from the five steps in docs.churchcrm.io's `.github/workflows/ci.yml` (`npm ci`, `./scripts/download-openapi.sh && npm run regen`, `npm run typecheck`, `node scripts/check-visuals.mjs` and `npm run build`), and excluded the release gate with a dated reason, because it reads the PR's milestone on GitHub and can't run locally. On November 22 at 21:08 I ran the gate by hand on `docs/203-email-closing-and-links`, and `~/.claude/ship-gate/gate-log.md` records PASS: all five manifest checks ran ok (the build took 74s), and all five pr-precheck checks passed, including diff-matches-plan, repro-before-after and diff-is-clean. Nothing failed, but the pass is tied to the fingerprints it logged, including base `5d36cf5`, and upstream `main` has since moved to `04de4fc`, so I expect the gate to run again when I open the PR instead of relying on that earlier pass. What I took from it is that the gate checks more than the build: pr-precheck read my PR draft, `plan.md` and `test_evidence.md` together and confirmed the diff matched the plan.
 
-**Unit 8: [one line on the tool work]**
+**Unit 8: Initial PR review monitoring and follow-up playbook**
 
-[2-4 sentences: the PR-monitor and your playbook. What it read, what it
-drafted, what you did with the draft.]
+On November 23, I checked [ChurchCRM documentation PR #252](https://github.com/ChurchCRM/docs.churchcrm.io/pull/252) through GitHub after publishing the contribution; the PR was open, with no submitted reviews, and its only visible comment was a CodeRabbit notice explaining that automatic reviews were not enabled for this repository. I prepared a follow-up playbook to check the PR status, maintainer comments, review threads, CI results and the requested **Current** milestone, then record actionable feedback, validate any necessary changes and update this story. I distinguished the bot notice from human feedback and kept the status as **Awaiting review**, rather than reporting a review or merge that had not occurred. The locally installed Unit 8 PR Monitor has **not yet been run**; its output and the finalized local playbook should be added here after execution.
 
 ---
 
